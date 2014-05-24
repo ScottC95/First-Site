@@ -1,7 +1,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+html, body {
+height:100%;
+padding-top: 20px;
 }
 
 ul.nav, .jumbotron h1 {
@@ -12,31 +12,51 @@ ul.nav {
 	font-size: 13px;
 }
 
+#get-involved{
+	background-color: #f5f5f5;
+}
+
+footer{
+	background-color: #f74d3c;
+	padding-top: 150px;
+	padding-bottom: 30px;
+}
+
 .jumbotron {
 	text-align: center;
 	background-image: url("../Images/hero_image.jpg");
 	color: white;
+	height: 100%;
 }
 
 .jumbotron h1 {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 20px 70px;
+	margin-top: 75px;
+	margin-bottom: 50px;
 }
 
 .jumbotron p {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	font-weight: 100;
 	padding: 0 50px;
 }
 
 .btn-lg {
 	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+.jumbotron img {
+	height: 10%;
+	width: 10%;
 }
 
 .homepage {
 	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 100%;
 }
+
 
 .homepage h2, .homepage h3{
 	color: #e74c3c;
@@ -44,12 +64,12 @@ ul.nav {
 	text-transform: uppercase;
 }
 
-.homepage h2{
+.homepage h2 {
 	font-size: 30px;
 }
 
-.homepage h3{
-	font-size: 26px;
+.homepage h3 {
+	font font-size: 26px;
 }
 
 .homepage p {
@@ -61,8 +81,62 @@ ul.nav {
 	color: #e74c3c;
 }
 
+.homepage a:hover {
+	color: #e74c3c;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
 .homepage hr {
 	border-color: #e74c3c;
 	width: 160px;
 	margin-top: 15px;
+}
+
+/* Repsonsive Styling*/
+@media (max-width:  1199px) {
+
+	.jumbotron h1 {
+		font-size: 50px;
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 991px) {
+
+	.jumbotron h1 {
+		font-size: 44px
+	}
+
+	.jumbotron p {
+		padding: 0 10px;
+	}
+
+	#get-involved .col-md-4 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 767px) {
+
+	.jumbotron h1 {
+		font-size: 24px
+	}
+
+	.jumbotron p {
+		font-size: 16px
+		padding: 0;
+	}
+
+	.btn-lg {
+		font-size: 18px;
+	}
+
+	.homepage p {
+		font-size:  18px;
+	}
+
+	footer img {
+		width: 80%;
+	}
+
 }
